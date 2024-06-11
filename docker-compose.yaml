@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    volumes:
+      - .:/django
+    ports:
+      - 8001:8001
+    image: application:django
+    container_name: app_container
+    command: gunicorn ecommercesite.wsgi:application --bind 0.0.0.0:8001
