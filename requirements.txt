@@ -1,4 +1,4 @@
-Django==5.0.1
+Django==5.0.8
 Pillow==9.4.0
 pip==23.2.1
 pipreqs==0.4.13
